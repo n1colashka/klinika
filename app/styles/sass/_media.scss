@@ -1,4 +1,9 @@
 @media (min-width: 1025px) {
+    .footer {
+        &__list a:hover {
+            color: $green;
+        }
+    }
     .header {
         &__top-content a:hover {
             color: $green;
@@ -48,6 +53,11 @@
 }
 
 @media (max-width: 1024px) {
+    .footer {
+        &__col {
+            width: 100%;
+        }
+    }
     .partners {
         padding-top: 35px;
         padding-bottom: 70px;
@@ -139,6 +149,15 @@
         }
     }
     .header {
+        &__middle {
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
+            position: fixed;
+            left: 0;
+            width: 100%;
+            top: 0;
+            z-index: 15;
+            background-color: #ffffff;
+        }
         &__menu-btn {
             display: block;
         }
@@ -224,6 +243,27 @@
 }
 
 @media (max-width: 768px) {
+    .footer {
+        padding-top: 30px;
+        &__inner {
+            flex-direction: column;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &__list a {
+            display: block;
+            width: 100%;
+        }
+        &__col {
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
     .section {
         &__head {
             flex-direction: column;

@@ -1,5 +1,5 @@
 .header {
-
+    background-color: #ffffff;
     &__top {
         border-bottom: 1px solid #DFDFDF;
     }
@@ -145,6 +145,13 @@
     &__bottom {
         background-color: $green;
         color: #ffffff;
+        &.fixed {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 13;
+        }
     }
 
     &__navigation {
@@ -281,7 +288,7 @@
         height: 100%;
         left: 0;
         top: 0;
-        z-index: 12;
+        z-index: 19;
         background-color: #ffffff;
         transition: .3s ease;
 

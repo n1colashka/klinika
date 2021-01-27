@@ -4,19 +4,8 @@
     background: url('../images/dist/decor.svg') no-repeat left center,
                 url('../images/dist/decor-2.svg') no-repeat right 100px top 160px;
 
-
     &__head {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         margin-bottom: 30px;
-    }
-
-    &__title {
-    }
-
-    &__link {
-        color: $green;
     }
 
     &__slider {

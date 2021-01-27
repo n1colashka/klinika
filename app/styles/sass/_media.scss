@@ -43,6 +43,9 @@
 }
 
 @media (max-width: 1024px) {
+    .news {
+        padding: 35px 0;
+    }
     .reviews {
         padding: 35px 0;
         background: 0;
@@ -155,6 +158,27 @@
 }
 
 @media (max-width: 900px) {
+    .news {
+        &__list {
+            flex-direction: column;
+            margin: -7px;
+        }
+        &__item {
+            margin: 7px;
+            flex-basis: calc(50% - 14px);
+        }
+        &__item--big {
+            padding: 10px;
+            .news__item-title {
+                font-size: 20px;
+                line-height: 28px;
+            }
+            .news__img img {
+                height: 250px;
+            }
+        }
+        
+    }
     .feedback {
         &__inner {
             flex-direction: column;
@@ -185,7 +209,7 @@
 }
 
 @media (max-width: 768px) {
-    .reviews {
+    .section {
         &__head {
             flex-direction: column;
         }
@@ -293,6 +317,20 @@
         }
         &__slider {
             height: 470px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .news {
+        &__items {
+            flex-direction: column;
+        }
+        &__item {
+            flex-basis: 100%;
+        }
+        &__img img {
+            height: 200px;
         }
     }
 }

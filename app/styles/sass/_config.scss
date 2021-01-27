@@ -182,3 +182,15 @@ a {
 		opacity: .5;
 	}
 }
+
+.section {
+	&__head {
+		display: flex;
+        justify-content: space-between;
+        align-items: center;
+	}
+
+	&__link {
+        color: $green;
+    }
+}

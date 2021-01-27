@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const menu =  document.querySelector('.menu');
     const overlay =  document.querySelector('.overlay');
     const html =  document.querySelector('html');
+    const menuList = document.querySelectorAll('.menu__list');
 
     function initMenu() {
         menuBtn.addEventListener('click', openMenu);
@@ -13,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
 
+        toggleMenuList();
+
         function openMenu() {
             menu.classList.add('open');
             overlay.classList.add('active');
@@ -22,11 +25,18 @@ document.addEventListener('DOMContentLoaded', () => {
         function closeMenu() {
             menu.classList.remove('open');
             overlay.classList.remove('active');
-            html.classList.remove('overflow-hidden');
-    
-            // sublists.forEach(item => {
-            //     item.classList.remove('open');
-            // })
+            html.classList.remove('overflow-hidden'); 
+            menuList.forEach(menu => {
+                menu.classList.remove('open');
+            })
+        }
+        
+        function toggleMenuList() {
+            menuList.forEach(menu => {
+                menu.addEventListener('click', function(e) {
+                    menu.classList.toggle('open');
+                })
+            })
         }
     }
 
@@ -34,12 +44,22 @@ document.addEventListener('DOMContentLoaded', () => {
         if (document.querySelector('.hero__slider')) {
             var heroSlider = new Swiper('.hero__slider', {
                 pagination: {
-                    el: '.swiper-pagination',
+                    el: '.hero__pagination',
                     clickable: true,
                 },
+                direction: 'vertical',
+                breakpoints: {
+                    320: {
+                        direction: 'horizontal',
+                    },
+                    1025: {
+                        direction: 'vertical',
+                    }
+                }
             });
         }
     }
+
 
 
     function initModals() {

@@ -39,6 +39,11 @@
 			<div class="container">
 				<div class="header__middle-content">
 					<div class="header__col header__logo-wrapper">
+						<button class="header__menu-btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
 						<a href="#" class="header__logo">
 							<img src="images/dist/logo.svg" alt="Вінницька міська клінічна лікарня №1">
 						</a>
@@ -79,13 +84,21 @@
 		<div class="header__bottom header__col">
 			<div class="container">
 				<nav class="header__navigation">
-					<button class="header__menu-btn" data-da=".header__middle-content,1024,0">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
 					<ul>
-						<li><a href="#">Відділення</a></li>
+						<li class="header__navigation-list">
+							<a href="#">Відділення</a>
+							<ul>
+								<li> <a href="#">Відділенння невідкладної медичної допомоги</a></li>
+								<li> <a href="#">Відділення анестезіології та реанімації</a></li>
+								<li> <a href="#">Гастроентерологічне відділення</a></li>
+								<li> <a href="#">Інфекційне відділення</a></li>
+								<li> <a href="#">Неврологічне відділення</a></li>
+								<li> <a href="#">Пульмонологічне відділення</a></li>
+								<li> <a href="#">Ревматологічне відділення</a></li>
+								<li> <a href="#">Терапевтичне відділення</a></li>
+								<li> <a href="#">Хірургічне відділення</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Поліклініка</a></li>
 						<li><a href="#">Платні послуги</a></li>
 						<li><a href="#">Відгуки і питання</a></li>
@@ -105,11 +118,22 @@
 			<div class="menu__title">Меню</div>
 			<nav class="menu__navigation">
 				<ul>
-					<li>
+					<li class="menu__list">
 						<a href="#">
 							<img src="images/dist/menu-1.svg" alt="Відділення">
 							<span>Відділення</span>
 						</a>
+						<ul>
+							<li> <a href="#">Відділенння невідкладної медичної допомоги</a></li>
+							<li> <a href="#">Відділення анестезіології та реанімації</a></li>
+							<li> <a href="#">Гастроентерологічне відділення</a></li>
+							<li> <a href="#">Інфекційне відділення</a></li>
+							<li> <a href="#">Неврологічне відділення</a></li>
+							<li> <a href="#">Пульмонологічне відділення</a></li>
+							<li> <a href="#">Ревматологічне відділення</a></li>
+							<li> <a href="#">Терапевтичне відділення</a></li>
+							<li> <a href="#">Хірургічне відділення</a></li>
+						</ul>
 					</li>
 					<li>
 						<a href="#">
@@ -194,6 +218,9 @@
 </header>
 
 	<section class="hero">
+		<div class="container hero__pagination-container">
+			<div class="swiper-pagination hero__pagination"></div>
+		</div>
 		<div class="hero__slider swiper-container">
 			<div class="swiper-wrapper">
 				<div class="hero__item swiper-slide" style="background-image: url('images/dist/hero-6.jpg');">
@@ -243,7 +270,123 @@
 					</div>
 				</div>
 			</div>
-			<div class="swiper-pagination"></div>
+		</div>
+		<div class="container">
+			<div class="hero__bottom">
+				<ul class="hero__bottom-list">
+					<li class="hero__bottom-item">
+						<div class="hero__bottom-head">
+							<div class="hero__bottom-count">285</div>
+							<img src="images/dist/bed.svg" alt="Ліжок">
+						</div>
+						<div class="hero__bottom-caption">Ліжок</div>
+					</li>
+					<li class="hero__bottom-item">
+						<div class="hero__bottom-head">
+							<div class="hero__bottom-count">169</div>
+							<img src="images/dist/doctor.svg" alt="Лікарів">
+						</div>
+						<div class="hero__bottom-caption">Лікарів</div>
+					</li>
+					<li class="hero__bottom-item">
+						<div class="hero__bottom-head">
+							<div class="hero__bottom-count">2394</div>
+							<img src="images/dist/mask.svg" alt="проліковано COVID-19">
+						</div>
+						<div class="hero__bottom-caption">проліковано COVID-19</div>
+					</li>
+					<li class="hero__bottom-item">
+						<div class="hero__bottom-head">
+							<div class="hero__bottom-count">103723</div>
+							<img src="images/dist/doctor-2.svg" alt="оглянуто спеціалістами">
+						</div>
+						<div class="hero__bottom-caption">оглянуто спеціалістами</div>
+					</li>
+					<li class="hero__bottom-item">
+						<div class="hero__bottom-head">
+							<div class="hero__bottom-count">6270</div>
+							<img src="images/dist/doctor-3.svg" alt="проліковано стаціонарно">
+						</div>
+						<div class="hero__bottom-caption">проліковано стаціонарно</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<a class="hero__widget" href="#">Онлайн запис</a>
+	</section>
+
+	<section class="info">
+		<div class="container">
+			<div class="info__inner">
+				<div class="info__text">
+					<p>
+						Комунальне некомерційне підприємство "Вінницька міська клінічна лікарня №1" працює 24/7 та призначена для надавання цілодобової стаціонарної допомоги населенню, є потужним багатопрофільним стаціонарним лікувальним закладом, який забезпечує діагностику, догляд та лікування широкого кола невідкладних станів та надання вторинної допомоги в стаціонарних та амбулаторних умовах в цілодобовому режимі.
+					</p>
+					<p>
+						Надання спеціалізованої медичної допомоги забезпечується потужим кадровим потенціалом. Штатний розпис складає 719, в тому числі: лікарі - 185, молодших спеціалістів з медичною освітою  - 293, молодшого медперсоналу - 137, інших працівників -  103. Ліжковий фонд лікарні розгорнуто на 285 ліжок.
+					</p>
+					<p>
+						Лікарня є базою шести кафедр Вінницького НМУ ім. М.І. Пирогова; кафедри пропедевтики внутрішньої медицини, кафедри загальної хірургії, кафедри інфекційних хвороб, кафедри внутрішньої медицини № 3, кафедри нервових хвороб, кафедри внутрішніх хвороб №2. Співробітники кафедр систематично проводять консультації та курацію хворих у всіх підрозділах лікарні. Лікарня є унікальною базою для лікавання та надання допомоги хворим.
+					</p>
+				</div>
+				<div class="info__img">
+					<img src="images/dist/info.jpg" alt="лiкарня">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="feedback">
+		<div class="container">
+			<div class="feedback__inner">
+				<a href="#" class="feedback__item feedback__item--white" style="background-image: url('images/dist/woman.jpg")>
+					<div class="feedback__content">
+						<div class="feedback__title title">Поліклініка</div>
+						<div class="feedback__subtitle">Медична допомога за 18 спеціальностями</div>
+					</div>
+				</a>
+				<a href="#" class="feedback__item feedback__item--green" style="background-image: url('images/dist/feedback-bg.png')">
+					<div class="feedback__content">
+						<div class="feedback__title title">Залишити відгук</div>
+						<div class="feedback__subtitle">Про нашу роботу</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="branches">
+		<div class="container">
+			<h1 class="branches__title title">Відділення в лікарні</h1>
+			<ul class="branches__list">
+				<li class="branches__item">
+					<a href="#">Відділенння невідкладної медичної допомоги</a>
+				</li>
+				<li class="branches__item">
+					<a href="#">Відділення анестезіології та реанімації</a>
+				</li>
+				<li class="branches__item">
+					<a href="#">Гастроентерологічне відділення</a>
+				</li>
+				<li class="branches__item">
+					<a href="#">Інфекційне відділення</a>
+				</li>
+				<li class="branches__item">
+					<a href="#">Неврологічне відділення</a>
+				</li>
+				<li class="branches__item">
+					<a href="#">Пульмонологічне відділення</a>
+				</li>
+				<li class="branches__item">
+					<a href="#">Ревматологічне відділення</a>
+				</li>
+				<li class="branches__item">
+					<a href="#">Терапевтичне відділення</a>
+				</li>
+				<li class="branches__item">
+					<a href="#">Хірургічне відділення</a>
+				</li>
+			</ul>
 		</div>
 	</section>
 

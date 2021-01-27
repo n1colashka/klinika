@@ -156,7 +156,7 @@
             width: 100%;
         }
 
-        li {
+        li + li{
             margin-left: 30px;
         }
 
@@ -192,6 +192,48 @@
         }
     }
 
+    &__navigation-list {
+        position: relative;
+        & > a {
+            padding-left: 55px;
+            background: url('../images/dist/burger.svg') left center no-repeat;
+        }
+        ul {
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            top: 51px;
+            z-index: 7;
+            left: 0;
+            width: 410px;
+            background-color: #F8F8F8;
+            color: $black;
+
+            li {
+                margin: 0;
+                width: 100%;
+                &:last-child {
+                    margin-bottom: 0;
+                    a {
+                        padding-bottom: 30px;
+                    }
+                }
+                &:first-child a{
+                    padding-top: 30px;
+                }
+
+            }
+
+            a {
+                display: block;
+                width: 100%;
+                padding: 10px 30px;
+            }
+        }
+    }
+    
+    
     &__covid {
         a {
             display: flex;
@@ -206,6 +248,7 @@
     &__menu-btn {
         width: 32px;
         cursor: pointer;
+        display: none;
 
         span {
             position: relative;
@@ -256,12 +299,51 @@
         margin-bottom: 15px;
     }
 
+    &__list > a {
+        position: relative;
+        padding-right: 50px;
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $green;
+            height: 2px;
+            width: 20px;
+            transition: .2s ease;
+        }
+
+        &::after {
+            transform: rotate(90deg);
+        }
+    }
+
+    &__list {
+        ul {
+            display: none;
+        }
+    }
+
+    &__list.open {
+        ul {
+            display: block;
+        }
+        a {
+            &::after {
+                transform: rotate(0);
+            }
+        }
+    }
+    
     &__navigation {
         margin-bottom: 30px;
         a {
             display: flex;
             align-items: center;
-            padding: 18px 0;
+            padding-top: 18px;
+            padding-bottom: 18px;
         }
 
         img {

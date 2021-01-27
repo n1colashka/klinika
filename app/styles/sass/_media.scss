@@ -1,0 +1,102 @@
+@media (min-width: 1025px) {
+    .header {
+        &__top-content a:hover {
+            color: $green;
+        }
+        &__navigation a:hover {
+            &::before,
+            &::after {
+                width: 100%;
+            }
+        }
+        &__contact:hover {
+            span::after {
+                width: 100%;
+            }
+        }
+        &__btn {
+            &:hover {
+                background-color: #E6EDFF;
+            }
+            &--blue:hover {
+                background-color: #E6EDFF;
+            }
+            &--green:hover {
+                background-color: #E5F4F3;
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .header {
+        &__contact {
+            margin-left: 30px;
+        }
+        &__btn {
+            min-width: 180px;
+        }
+        &__middle-content {
+            padding: 10px 0;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        &__bottom {
+            display: none;
+        }
+        &__top {
+            display: none;
+        }
+        &__contacts {
+            display: none;
+        }
+        &__logo-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        &__logo {
+            margin-left: 35px;
+        }
+        &__menu-btn {
+            span {
+                background-color: $green;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &__logo {
+            margin: 0 10px;
+        }
+        &__btn {
+            padding: 0;
+            border: none;
+            min-width: auto;
+            span {
+                display: none;
+            }
+            img {
+                margin: 0;
+            }
+        }
+        &__btn:last-child {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+}
+
+@media (max-width: 450px) {
+
+}
+@media (max-width: 400px) {
+
+}

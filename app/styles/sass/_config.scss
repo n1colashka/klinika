@@ -1,0 +1,181 @@
+// USER VARIABLES SECTION
+$black: #404040;
+$grey: #CCCCCC;
+$green: #009688;
+$red: #F95858;
+$blue: #1050FF;
+$fontsize: 16px; // Body Font Size
+$userfont: 'Roboto', sans-serif; // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+// FONTS LOAD SECTION
+@font-face {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	src: local('Roboto Regular'), local('Roboto-Regular'),
+		url('../fonts/Roboto-Regular.woff2') format('woff2'),
+		url('../fonts/Roboto-Regular.woff') format('woff'),
+		url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto-Regular.ttf') format('truetype');
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-Bold', sans-serif;
+	font-weight: 700;
+	src: local('Roboto Bold'), local('Roboto-Bold'),
+		url('../fonts/Roboto-Bold.woff2') format('woff2'),
+		url('../fonts/Roboto-Bold.woff') format('woff'),
+		url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto-Bold.ttf') format('truetype');
+	font-display: swap;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'Roboto-Light', sans-serif;
+	src: local('Roboto Light'), local('Roboto-Light'),
+		url('../fonts/Roboto-Light.woff2') format('woff2'),
+		url('../fonts/Roboto-Light.woff') format('woff'),
+		url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-display: swap;
+	font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Roboto-Medium';
+	src: local('Roboto Medium'), local('Roboto-Medium'),
+		url('../fonts/Roboto-Medium.woff2') format('woff2'),
+		url('../fonts/Roboto-Medium.woff') format('woff'),
+		url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+// GENERAL DOCUMENT STYLES
+
+input, textarea {
+	outline: transparent;
+}
+
+body {
+	position: relative;
+	font-family: $userfont;
+	font-size: 16px;
+	line-height: 21px;
+	color: $black;
+	min-width: 320px;
+	overflow-x: hidden;
+}
+
+html {
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+	
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+	
+	
+ul, li {
+	padding: 0;
+	margin: 0;
+}
+
+ol li, ul li {
+	list-style: none;
+}
+
+address {
+	font-style: normal;
+}
+
+// Input number fix
+
+input[type='number'] {
+	-moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none
+}
+
+textarea {
+	resize: none;
+}
+
+button {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.title {
+
+}
+
+.btn {
+	display: inline-block;
+	border: none;
+	cursor: pointer;
+	transition: .2s ease;
+	padding: 14px 20px;
+	text-align: center;
+	
+	@media (min-width: 1025px) {
+		&:hover {
+			
+		}
+	}
+}
+
+img {
+	max-width: 100%;
+	object-fit: cover;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+
+	body {
+		overflow: hidden
+	} 
+}
+
+.overlay {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $black;
+	opacity: 0;
+
+	&.active {
+		display: block;
+		opacity: .5;
+	}
+}

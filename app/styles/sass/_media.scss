@@ -43,6 +43,10 @@
 }
 
 @media (max-width: 1024px) {
+    .reviews {
+        padding: 35px 0;
+        background: 0;
+    }
     .title {
         font-size: 26px;
         line-height: 32px;
@@ -181,6 +185,40 @@
 }
 
 @media (max-width: 768px) {
+    .reviews {
+        &__head {
+            flex-direction: column;
+        }
+    }
+    .reviews-item {
+        &__rating {
+            margin-bottom: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        &__author {
+            margin-bottom: 5px;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        &__content {
+            padding: 15px;
+        }
+        &__head {
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        &__head-left {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__right {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
     .branches {
         &__list {
             margin-left: 0;

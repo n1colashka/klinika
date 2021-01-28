@@ -1,4 +1,12 @@
 @media (min-width: 1025px) {
+    .gallery__item a:hover {
+        &::before {
+            opacity: 0.5;
+        }
+        &::after {
+            opacity: 1;
+        }
+    }
     .reviews-form__btn:hover {
         background-color: #E5F4F3;
     }
@@ -86,6 +94,9 @@
 }
 
 @media (max-width: 1024px) {
+    .history {
+        padding-bottom: 70px;
+    }
     .team {
         padding-bottom: 70px;
         &__item {
@@ -315,6 +326,35 @@
 }
 
 @media (max-width: 768px) {
+    .gallery {
+        &__item {
+            width: calc(33.333% - 30px);
+        }
+    }
+    .history {
+        &__text {
+            font-size: 14px;
+        }
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__item {
+            font-size: 14px;
+            margin-bottom: 40px;
+            &::before {
+                left: -45px;
+                width: 30px;
+                height: 30px;
+                border: 10px solid #e5f4f3;
+            }
+        }
+        &__list {
+            padding-left: 50px;
+            &::before {
+                height: calc(100% - 70px);
+            }
+        }
+    }
     .reviews-page {
         .reviews-item__author {
             margin: 0;
@@ -501,6 +541,9 @@
     }
 }
 @media (max-width: 600px) {
+    .gallery__item {
+        width: calc(50% - 30px);
+    }
     .reviews-page {
         &__item {
             padding: 15px;
@@ -557,6 +600,15 @@
 }
 
 @media (max-width: 450px) {
+    .gallery__list {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .gallery__item {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
     .partners {
         &__list {
             margin-left: 0;

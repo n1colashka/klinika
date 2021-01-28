@@ -1,4 +1,7 @@
 @media (min-width: 1025px) {
+    .reviews-form__btn:hover {
+        background-color: #E5F4F3;
+    }
     .pagination {
         li:hover {
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
@@ -83,6 +86,9 @@
 }
 
 @media (max-width: 1024px) {
+    .reviews-page {
+        padding-bottom: 70px;
+    }
     .services {
         padding-bottom: 70px;
     }
@@ -303,6 +309,23 @@
 }
 
 @media (max-width: 768px) {
+    .reviews-page {
+        .reviews-item__author {
+            margin: 0;
+        }
+        .reviews-item__head-left {
+            margin-bottom: 5px;
+            margin-right: 10px;
+        }
+    }
+    .reviews-item {
+        &--answer {
+            margin-left: 20px;
+            &::before {
+                left: -10px;
+            }
+        }
+    }
     .services__title {
         margin-bottom: 35px;
     }
@@ -458,6 +481,11 @@
     }
 }
 @media (max-width: 600px) {
+    .reviews-page {
+        &__item {
+            padding: 15px;
+        }
+    }
     
     .hero {
         &__content {
@@ -470,6 +498,22 @@
 }
 
 @media (max-width: 480px) {
+    .reviews-form {
+        &__row {
+            flex-direction: column;
+            margin-left: 0;
+            margin-right: 0;
+            .reviews-form__item {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
     .article .news__item {
         max-width: calc(100% - 20px);
         margin: 0;

@@ -1,0 +1,230 @@
+.reviews-page {
+    padding-bottom: 150px;
+
+    &__inner {
+    }
+
+    &__wrapper {
+        max-width: 770px;
+    }
+
+    &__title {
+        margin-bottom: 55px;
+    }
+
+    &__box {
+        margin-bottom: 60px;
+    }
+
+    &__head {
+        display: flex;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: 30px;
+    }
+
+    &__head-item {
+        width: calc(50% - 30px);
+        text-align: center;
+        cursor: pointer;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #dfdfdf;
+        color: #707070;
+
+        &.active {
+            border-bottom-color: $green;
+            color: $black;
+        }
+    }
+
+    &__content {
+    }
+
+    &__item {
+        padding: 30px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        display: none;
+        
+        &.active {
+            display: block;
+        }
+    }
+}
+
+.reviews-form {
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 30px;
+        margin-left: -30px;
+        margin-right: -30px;
+
+        .reviews-form__item {
+            width: calc(50% - 60px);
+            margin: 0 30px;
+        }
+    }
+
+    &__item {
+        
+        span {
+            display: block;
+            margin-bottom: 10px;
+            font-family: 'Roboto-Medium', sans-serif;
+            font-weight: 500;
+        }
+
+        input, textarea {
+            display: block;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            padding: 12px 20px;
+            background-color: #F8F8F8;
+            border: none;
+        }
+
+        textarea {
+            height: 145px;
+            resize: none;
+        }
+    }
+
+    &__rating {
+        display: inline-flex;
+        flex-direction: row-reverse;
+
+        label {
+            color: #DFDFDF;
+            font-size: 29px;
+            cursor: pointer;
+        }
+
+        input {
+            display: none;
+            padding: 2px;
+
+            &:checked ~ label {
+                color: $green;
+            }
+        }
+        
+
+        .star {
+            &:hover {
+                color: $green;
+            }
+            &:hover ~ label {
+                color: $green;
+            }
+        }
+    }
+
+
+    &__btn-wrapper {
+        margin-top: 30px;
+        text-align: right;
+    }
+
+    &__btn-content {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        border-radius: 26px;
+        background-color: #E5F4F3;
+        padding: 10px;
+        color: $green;
+    }
+    
+    &__btn {
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 26px;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #e6edff;
+        transition: .2s ease;
+    }
+}
+
+
+.rating-all {
+	display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+	&__body {
+		font-size: 30px;
+		letter-spacing: -3px;
+		position: relative;
+		&::before {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			content: "";
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='21.286' height='15' viewBox='0 0 21.286 15'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect width='21.286' height='15' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Группа_прокрутки_2' data-name='Группа прокрутки 2' clip-path='url(%23clip-path)' style='isolation: isolate'%3E%3Cpath id='Контур_60' data-name='Контур 60' d='M10.432,15.546a.477.477,0,0,1-.427-.3L8.244,10c-.056-.166-.146-.166-.2,0L6.282,15.246a.477.477,0,0,1-.427.3H.156c-.18,0-.208.083-.062.186L4.7,18.974a.454.454,0,0,1,.163.486L3.106,24.706c-.056.166.017.217.163.115L7.88,21.578a.49.49,0,0,1,.527,0l4.611,3.243c.146.1.219.051.163-.115L11.42,19.46a.454.454,0,0,1,.163-.486l4.611-3.242c.146-.1.118-.186-.062-.186h-5.7Z' transform='translate(0 -9.874)' fill='%23ccc'/%3E%3C/g%3E%3C/svg%3E%0A");
+			background-repeat: repeat-x;
+			color: #fff;
+		}
+	}
+
+	&__active {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 0;
+		height: 100%;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='21.286' height='15' viewBox='0 0 21.286 15'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect width='21.286' height='15' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Группа_прокрутки_2' data-name='Группа прокрутки 2' clip-path='url(%23clip-path)' style='isolation: isolate'%3E%3Cpath id='Контур_60' data-name='Контур 60' d='M10.432,15.546a.477.477,0,0,1-.427-.3L8.244,10c-.056-.166-.146-.166-.2,0L6.282,15.246a.477.477,0,0,1-.427.3H.156c-.18,0-.208.083-.062.186L4.7,18.974a.454.454,0,0,1,.163.486L3.106,24.706c-.056.166.017.217.163.115L7.88,21.578a.49.49,0,0,1,.527,0l4.611,3.243c.146.1.219.051.163-.115L11.42,19.46a.454.454,0,0,1,.163-.486l4.611-3.242c.146-.1.118-.186-.062-.186h-5.7Z' transform='translate(0 -9.874)' fill='%23009688'/%3E%3C/g%3E%3C/svg%3E%0A");
+		background-repeat: repeat-x;
+		overflow: hidden;
+	}
+
+	&__list {
+		display: flex;
+		opacity: 0;
+	}
+
+
+	&__value {
+        font-family: 'Roboto-Medium', sans-serif;
+        font-weight: 500;
+		font-size: 36px;
+        line-height: 48px;
+        margin-right: 20px;
+	}
+
+	&__item {
+		position: relative;
+		flex: 0 0 20%;
+		height: 100%;
+	}
+
+    &__total {
+        font-size: 14px;
+        font-family: 'Roboto-Light', sans-serif;
+        font-weight: 300;
+        margin-top: 3px;
+    }
+}
+
+.reviews-page {
+    .reviews-item {
+        padding: 0;
+        min-height: auto;
+    }
+}
+
+.comment {
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

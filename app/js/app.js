@@ -171,10 +171,67 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         }
     }
+
+    function initRatings() {
+        const ratings = document.querySelectorAll('.rating-all');
+
+        if (ratings.length > 0) {
+            let ratingActive, ratingValue, fault = 0;
+
+            for (let index = 0; index < ratings.length; index++) {
+                const rating = ratings[index];
+                initRating(rating);
+            }
+
+            function initRating(rating) {
+                initRatingVars(rating);
+                setRatingActiveWidth();
+            }
+    
+            function initRatingVars(rating) {
+                ratingActive = rating.querySelector('.rating-all__active');
+                ratingValue = rating.querySelector('.rating-all__value');
+            }
+    
+            function setRatingActiveWidth(index = ratingValue.innerHTML) {
+
+                const ratingActiveWidth = index / 0.05;
+                ratingActive.style.width = `calc(${ratingActiveWidth}% - 2px`;
+            }
+        }
+    }
+
+    function initReviewsTabs() {
+        const tabsTitle = document.querySelectorAll('[data-tab-title]');
+        const tabsContent = document.querySelectorAll('[data-tab]');
+
+        if (tabsTitle.length > 0) {
+            tabsTitle.forEach(title => {
+                title.addEventListener('click', function() {
+                    tabsTitle.forEach(item => {
+                        item.classList.remove('active');
+                    })
+                    tabsContent.forEach(item => {
+                        item.classList.remove('active');
+                    })
+    
+                    tabsContent.forEach(tab => {
+                        if (tab.dataset.tab === title.dataset.tabTitle) {
+                            tab.classList.add('active');
+                            title.classList.add('active');
+                        }
+                    })
+                })
+            })
+        }
+
+    }
     
     initMenu();
     initFixedHeader();
     initSliders();
+    initRatings();
     initServicesAccordions();
+    initReviewsTabs();
     // initModals();
 })

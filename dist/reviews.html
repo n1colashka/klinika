@@ -1,0 +1,595 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Главная</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/main.min.css">
+	
+</head>
+
+<body>
+    <header class="header">
+	<div class="header__inner">
+		<div class="header__top">
+			<div class="container">
+				<div class="header__top-content">
+					<a class="header__geo" href="#">
+						<img src="images/dist/geo.svg" alt="geo">
+						<address>м. Вінниця, вул. Хмельницьке шосе, 96</address>
+					</a>
+					<nav class="header__top-navigation">
+						<ul>
+							<li><a href="#">Керівництво</a></li>
+							<li><a href="#">Історія лікарні</a></li>
+							<li><a href="#">Використання коштів</a></li>
+							<li><a href="#">Є ліки</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="header__middle">
+			<div class="container">
+				<div class="header__middle-content">
+					<div class="header__col header__logo-wrapper">
+						<button class="header__menu-btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<a href="#" class="header__logo">
+							<img src="images/dist/logo.svg" alt="Вінницька міська клінічна лікарня №1">
+						</a>
+					</div>
+					<div class="header__contacts header__col">
+						<a href="tel:0432560110" class="header__contact">
+							<div class="header__contact-top">
+								<img src="images/dist/phone.svg" alt="contacts">
+								<span>(0432) 56-01-10</span>
+							</div>
+							<div class="header__contact-bottom">Реєстратура поліклініки</div>
+						</a>
+						<a href="tel:0432560117" class="header__contact">
+							<div class="header__contact-top">
+								<img src="images/dist/phone.svg" alt="contacts">
+								<span>(0432) 56-01-17</span>
+							</div>
+							<div class="header__contact-bottom">Приймальна</div>
+						</a>
+					</div>
+					<div class="header__buttons header__col">
+						<a href="#" class="header__btn header__btn--blue">
+							<div class="header__btn-content">
+								<img src="images/dist/facebook-2.svg" alt="facebook">
+								<span>Ми в фейсбуці</span>
+							</div>
+						</a>
+						<a href="#" class="header__btn header__btn--green">
+							<div class="header__btn-content">
+								<img src="images/dist/check.svg" alt="online">
+								<span>Онлайн запис</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom header__col">
+			<div class="container">
+				<nav class="header__navigation">
+					<ul>
+						<li class="header__navigation-list">
+							<a href="#">Відділення</a>
+							<ul>
+								<li> <a href="#">Відділенння невідкладної медичної допомоги</a></li>
+								<li> <a href="#">Відділення анестезіології та реанімації</a></li>
+								<li> <a href="#">Гастроентерологічне відділення</a></li>
+								<li> <a href="#">Інфекційне відділення</a></li>
+								<li> <a href="#">Неврологічне відділення</a></li>
+								<li> <a href="#">Пульмонологічне відділення</a></li>
+								<li> <a href="#">Ревматологічне відділення</a></li>
+								<li> <a href="#">Терапевтичне відділення</a></li>
+								<li> <a href="#">Хірургічне відділення</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Поліклініка</a></li>
+						<li><a href="#">Платні послуги</a></li>
+						<li><a href="#">Відгуки і питання</a></li>
+						<li><a href="#">Новини</a></li>
+						<li><a href="#">Контакти</a></li>
+						<li class="header__covid">
+							<a href="#">
+								<img src="images/dist/coronavirus.svg" alt="coronavirus">
+								<span>Covid - 19</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="header__menu menu">
+			<div class="menu__title">Меню</div>
+			<nav class="menu__navigation">
+				<ul>
+					<li class="menu__list">
+						<a href="#">
+							<img src="images/dist/menu-1.svg" alt="Відділення">
+							<span>Відділення</span>
+						</a>
+						<ul>
+							<li> <a href="#">Відділенння невідкладної медичної допомоги</a></li>
+							<li> <a href="#">Відділення анестезіології та реанімації</a></li>
+							<li> <a href="#">Гастроентерологічне відділення</a></li>
+							<li> <a href="#">Інфекційне відділення</a></li>
+							<li> <a href="#">Неврологічне відділення</a></li>
+							<li> <a href="#">Пульмонологічне відділення</a></li>
+							<li> <a href="#">Ревматологічне відділення</a></li>
+							<li> <a href="#">Терапевтичне відділення</a></li>
+							<li> <a href="#">Хірургічне відділення</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/dist/menu-2.svg" alt="Поліклініка">
+							<span>Поліклініка</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/dist/menu-3.svg" alt="Платні послуги">
+							<span>Платні послуги</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/dist/menu-4.svg" alt="Відгуки і питання">
+							<span>Відгуки і питання</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/dist/menu-5.svg" alt="Новини">
+							<span>Новини</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/dist/menu-6.svg" alt="Covid - 19">
+							<span>Covid - 19</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/dist/menu-7.svg" alt="Керівництво">
+							<span>Керівництво</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/dist/menu-8.svg" alt="Історія лікарні">
+							<span>Історія лікарні</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/dist/menu-9.svg" alt="Використання коштів">
+							<span>Використання коштів</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/dist/menu-10.svg" alt="Є ліки">
+							<span>Є ліки</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/dist/menu-11.svg" alt="Контакти">
+							<span>Контакти</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="menu__contacts">
+				<a href="tel:0432560110" class="header__contact">
+					<div class="header__contact-top">
+						<img src="images/dist/phone.svg" alt="contacts">
+						<span>(0432) 56-01-10</span>
+					</div>
+					<div class="header__contact-bottom">Реєстратура поліклініки</div>
+				</a>
+				<a href="tel:0432560117" class="header__contact">
+					<div class="header__contact-top">
+						<img src="images/dist/phone.svg" alt="contacts">
+						<span>(0432) 56-01-17</span>
+					</div>
+					<div class="header__contact-bottom">Приймальна</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Відгуки і питання</a></li>
+        </ul>
+    </div>
+
+    <section class="reviews-page">
+            <div class="container">
+                <h1 class="reviews-page__title title title--line"><span>Відгуки і питання</span></h1>
+                <div class="reviews-page__wrapper">
+                    <div class="reviews-page__inner">
+                        <div class="reviews-page__box">
+                            <div class="reviews-page__head">
+                                <div class="reviews-page__head-item active" data-tab-title="1">Відгук</div>
+                                <div class="reviews-page__head-item" data-tab-title="2">Задати питання</div>
+                            </div>
+                            <div class="reviews-page__content">
+                                <div class="reviews-page__item active" data-tab="1">
+                                    <form action="#" class="reviews-form">
+                                        <div class="reviews-form__row">
+                                            <div class="reviews-form__item">
+                                                <label>
+                                                    <span>Ім`я та прізвище</span>
+                                                    <input type="text" placeholder="Введите ваше имя">
+                                                </label>
+                                            </div>
+                                            <div class="reviews-form__item">
+                                                <span>Оцінка</span>
+                                                <div class="reviews-form__rating">
+                                                    <input id="5-stars" type="radio" name="rating" value="5"/>
+                                                    <label class="star" for="5-stars">&bigstar;</label>
+                                                    <input id="4-stars" type="radio" name="rating" value="4"/>
+                                                    <label class="star" for="4-stars">&bigstar;</label>
+                                                    <input id="3-stars" type="radio" name="rating" value="3"/>
+                                                    <label class="star" for="3-stars">&bigstar;</label>
+                                                    <input id="2-stars" type="radio" name="rating" value="2"/>
+                                                    <label class="star" for="2-stars">&bigstar;</label>
+                                                    <input id="1-star" type="radio" name="rating" value="1"/>
+                                                    <label class="star" for="1-star">&bigstar;</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviews-form__item">
+                                            <label>
+                                                <span>Коментарій</span>
+                                                <textarea placeholder="Дуже відповідальний персонал, чудові херурги"></textarea>
+                                            </label>
+                                        </div>
+                                        <div class="reviews-form__btn-wrapper">
+                                            <button class="reviews-form__btn"><span class="reviews-form__btn-content">Залишити відгук</span></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="reviews-page__item" data-tab="2">
+                                    <form action="#" class="reviews-form">
+                                        Форма 2
+                                        <div class="reviews-form__row">
+                                            <div class="reviews-form__item">
+                                                <label>
+                                                    <span>Ім`я та прізвище</span>
+                                                    <input type="text" placeholder="Введите ваше имя">
+                                                </label>
+                                            </div>
+                                            <div class="reviews-form__item">
+                                                <span>Оцінка</span>
+                                                <div class="reviews-form__rating">
+                                                    <input id="5-stars-2" type="radio" name="rating-2" value="5"/>
+                                                    <label class="star" for="5-stars-2">&bigstar;</label>
+                                                    <input id="4-stars-2" type="radio" name="rating-2" value="4"/>
+                                                    <label class="star" for="4-stars-2">&bigstar;</label>
+                                                    <input id="3-stars-2" type="radio" name="rating-2" value="3"/>
+                                                    <label class="star" for="3-stars-2">&bigstar;</label>
+                                                    <input id="2-stars-2" type="radio" name="rating-2" value="2"/>
+                                                    <label class="star" for="2-stars-2">&bigstar;</label>
+                                                    <input id="1-star-2" type="radio" name="rating-2" value="1"/>
+                                                    <label class="star" for="1-star-2">&bigstar;</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviews-form__item">
+                                            <label>
+                                                <span>Коментарій</span>
+                                                <textarea placeholder="Дуже відповідальний персонал, чудові херурги"></textarea>
+                                            </label>
+                                        </div>
+                                        <div class="reviews-form__btn-wrapper">
+                                            <button class="reviews-form__btn"><span class="reviews-form__btn-content">Залишити відгук</span></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="reviews-page__rating rating-all">
+                            <div class="rating-all__value">4.5</div>
+                            <div class="rating-all__content">
+                                <div class="rating-all__body">
+                                    <div class="rating-all__active"></div>
+                                    <div class="rating-all__list">
+                                        <img src="images/dist/star.svg" alt="">
+                                        <img src="images/dist/star.svg" alt="">
+                                        <img src="images/dist/star.svg" alt="">
+                                        <img src="images/dist/star.svg" alt="">
+                                        <img src="images/dist/star.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="rating-all__total">всього 21 відгук</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="comment">
+                            <div class="reviews-item">
+                                <div class="reviews-item__content">
+                                    <div class="reviews-item__head">
+                                        <div class="reviews-item__head-left">
+                                            <div class="reviews-item__author">Ковальчук Ірина</div>
+                                            <div class="reviews-item__rating rating">
+                                                <div class="rating__item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.286" height="15" viewBox="0 0 16.286 15">
+                                                        <path  d="M10.432,15.546a.477.477,0,0,1-.427-.3L8.244,10c-.056-.166-.146-.166-.2,0L6.282,15.246a.477.477,0,0,1-.427.3H.156c-.18,0-.208.083-.062.186L4.7,18.974a.454.454,0,0,1,.163.486L3.106,24.706c-.056.166.017.217.163.115L7.88,21.578a.49.49,0,0,1,.527,0l4.611,3.243c.146.1.219.051.163-.115L11.42,19.46a.454.454,0,0,1,.163-.486l4.611-3.242c.146-.1.118-.186-.062-.186h-5.7Z" transform="translate(0 -9.874)" fill="#009688"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.286" height="15" viewBox="0 0 16.286 15">
+                                                        <path  d="M10.432,15.546a.477.477,0,0,1-.427-.3L8.244,10c-.056-.166-.146-.166-.2,0L6.282,15.246a.477.477,0,0,1-.427.3H.156c-.18,0-.208.083-.062.186L4.7,18.974a.454.454,0,0,1,.163.486L3.106,24.706c-.056.166.017.217.163.115L7.88,21.578a.49.49,0,0,1,.527,0l4.611,3.243c.146.1.219.051.163-.115L11.42,19.46a.454.454,0,0,1,.163-.486l4.611-3.242c.146-.1.118-.186-.062-.186h-5.7Z" transform="translate(0 -9.874)" fill="#009688"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.286" height="15" viewBox="0 0 16.286 15">
+                                                        <path  d="M10.432,15.546a.477.477,0,0,1-.427-.3L8.244,10c-.056-.166-.146-.166-.2,0L6.282,15.246a.477.477,0,0,1-.427.3H.156c-.18,0-.208.083-.062.186L4.7,18.974a.454.454,0,0,1,.163.486L3.106,24.706c-.056.166.017.217.163.115L7.88,21.578a.49.49,0,0,1,.527,0l4.611,3.243c.146.1.219.051.163-.115L11.42,19.46a.454.454,0,0,1,.163-.486l4.611-3.242c.146-.1.118-.186-.062-.186h-5.7Z" transform="translate(0 -9.874)" fill="#009688"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.286" height="15" viewBox="0 0 16.286 15">
+                                                        <path  d="M10.432,15.546a.477.477,0,0,1-.427-.3L8.244,10c-.056-.166-.146-.166-.2,0L6.282,15.246a.477.477,0,0,1-.427.3H.156c-.18,0-.208.083-.062.186L4.7,18.974a.454.454,0,0,1,.163.486L3.106,24.706c-.056.166.017.217.163.115L7.88,21.578a.49.49,0,0,1,.527,0l4.611,3.243c.146.1.219.051.163-.115L11.42,19.46a.454.454,0,0,1,.163-.486l4.611-3.242c.146-.1.118-.186-.062-.186h-5.7Z" transform="translate(0 -9.874)" fill="#009688"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.286" height="15" viewBox="0 0 16.286 15">
+                                                        <path  d="M10.432,15.546a.477.477,0,0,1-.427-.3L8.244,10c-.056-.166-.146-.166-.2,0L6.282,15.246a.477.477,0,0,1-.427.3H.156c-.18,0-.208.083-.062.186L4.7,18.974a.454.454,0,0,1,.163.486L3.106,24.706c-.056.166.017.217.163.115L7.88,21.578a.49.49,0,0,1,.527,0l4.611,3.243c.146.1.219.051.163-.115L11.42,19.46a.454.454,0,0,1,.163-.486l4.611-3.242c.146-.1.118-.186-.062-.186h-5.7Z" transform="translate(0 -9.874)" fill="#009688"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviews-item__right">
+                                            <time datetime="2020-12-10">10.12.2020</time>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-item__text">
+                                        Дуже відповідальний персонал, чудові херургие відповідальний персонал, чудові херургиурги, травма Дуже відповідальний персонал, чудові херургиурги, травматологи, медсестри і санітарочки. Дійсно лікарі від Бога. Дякую за врятовану ручку Лікареві Чорному С.В.І ще велике -велике дякую лікареві, який був на зміні 23 .08 .20 (нажаль не знаю імені) Дякую за оперативність, за допомогу, за пораду. Після зміни не пішов додому ,щоб прооперувати мою доньку .Низький Вам уклін ,здоров'я Вам та Вашим родинам!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="reviews-item">
+                                <div class="reviews-item__content">
+                                    <div class="reviews-item__head">
+                                        <div class="reviews-item__head-left">
+                                            <div class="reviews-item__author">Ковальчук Ірина</div>
+                                            <div class="reviews-item__icon">
+                                                <img src="images/dist/comment-1.svg" alt="question">
+                                            </div>
+                                        </div>
+                                        <div class="reviews-item__right">
+                                            <time datetime="2020-12-10">10.12.2020</time>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-item__text">
+                                        Дуже відповідальний персонал, чудові херургие відповідальний персонал, чудові херургиурги, травма Дуже відповідальний персонал, чудові херургиурги, травматологи, медсестри і санітарочки. Дійсно лікарі від Бога. Дякую за врятовану ручку Лікареві Чорному С.В.І ще велике -велике дякую лікареві, який був на зміні 23 .08 .20 (нажаль не знаю імені) Дякую за оперативність, за допомогу, за пораду. Після зміни не пішов додому ,щоб прооперувати мою доньку .Низький Вам уклін ,здоров'я Вам та Вашим родинам!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-item reviews-item--answer">
+                                <div class="reviews-item__content">
+                                    <div class="reviews-item__head">
+                                        <div class="reviews-item__head-left">
+                                            <div class="reviews-item__author">Ковальчук Ірина</div>
+                                            <div class="reviews-item__icon">
+                                                <img src="images/dist/comment-2.svg" alt="question">
+                                            </div>
+                                        </div>
+                                        <div class="reviews-item__right">
+                                            <time datetime="2020-12-10">10.12.2020</time>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-item__text">
+                                        Дуже відповідальний персонал, чудові херургие відповідальний персонал, чудові херургиурги, травма Дуже відповідальний персонал, чудові херургиурги, травматологи, медсестри і санітарочки. Дійсно лікарі від Бога. Дякую за врятовану ручку Лікареві Чорному С.В.І ще велике -велике дякую лікареві, який був на зміні 23 .08 .20 (нажаль не знаю імені) Дякую за оперативність, за допомогу, за пораду. Після зміни не пішов додому ,щоб прооперувати мою доньку .Низький Вам уклін ,здоров'я Вам та Вашим родинам!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="reviews-item">
+                                <div class="reviews-item__content">
+                                    <div class="reviews-item__head">
+                                        <div class="reviews-item__head-left">
+                                            <div class="reviews-item__author">Ковальчук Ірина</div>
+                                            <div class="reviews-item__rating rating">
+                                                <div class="rating__item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.286" height="15" viewBox="0 0 16.286 15">
+                                                        <path  d="M10.432,15.546a.477.477,0,0,1-.427-.3L8.244,10c-.056-.166-.146-.166-.2,0L6.282,15.246a.477.477,0,0,1-.427.3H.156c-.18,0-.208.083-.062.186L4.7,18.974a.454.454,0,0,1,.163.486L3.106,24.706c-.056.166.017.217.163.115L7.88,21.578a.49.49,0,0,1,.527,0l4.611,3.243c.146.1.219.051.163-.115L11.42,19.46a.454.454,0,0,1,.163-.486l4.611-3.242c.146-.1.118-.186-.062-.186h-5.7Z" transform="translate(0 -9.874)" fill="#009688"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.286" height="15" viewBox="0 0 16.286 15">
+                                                        <path  d="M10.432,15.546a.477.477,0,0,1-.427-.3L8.244,10c-.056-.166-.146-.166-.2,0L6.282,15.246a.477.477,0,0,1-.427.3H.156c-.18,0-.208.083-.062.186L4.7,18.974a.454.454,0,0,1,.163.486L3.106,24.706c-.056.166.017.217.163.115L7.88,21.578a.49.49,0,0,1,.527,0l4.611,3.243c.146.1.219.051.163-.115L11.42,19.46a.454.454,0,0,1,.163-.486l4.611-3.242c.146-.1.118-.186-.062-.186h-5.7Z" transform="translate(0 -9.874)" fill="#009688"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.286" height="15" viewBox="0 0 16.286 15">
+                                                        <path  d="M10.432,15.546a.477.477,0,0,1-.427-.3L8.244,10c-.056-.166-.146-.166-.2,0L6.282,15.246a.477.477,0,0,1-.427.3H.156c-.18,0-.208.083-.062.186L4.7,18.974a.454.454,0,0,1,.163.486L3.106,24.706c-.056.166.017.217.163.115L7.88,21.578a.49.49,0,0,1,.527,0l4.611,3.243c.146.1.219.051.163-.115L11.42,19.46a.454.454,0,0,1,.163-.486l4.611-3.242c.146-.1.118-.186-.062-.186h-5.7Z" transform="translate(0 -9.874)" fill="#009688"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.286" height="15" viewBox="0 0 16.286 15">
+                                                        <path  d="M10.432,15.546a.477.477,0,0,1-.427-.3L8.244,10c-.056-.166-.146-.166-.2,0L6.282,15.246a.477.477,0,0,1-.427.3H.156c-.18,0-.208.083-.062.186L4.7,18.974a.454.454,0,0,1,.163.486L3.106,24.706c-.056.166.017.217.163.115L7.88,21.578a.49.49,0,0,1,.527,0l4.611,3.243c.146.1.219.051.163-.115L11.42,19.46a.454.454,0,0,1,.163-.486l4.611-3.242c.146-.1.118-.186-.062-.186h-5.7Z" transform="translate(0 -9.874)" fill="#009688"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.286" height="15" viewBox="0 0 16.286 15">
+                                                        <path  d="M10.432,15.546a.477.477,0,0,1-.427-.3L8.244,10c-.056-.166-.146-.166-.2,0L6.282,15.246a.477.477,0,0,1-.427.3H.156c-.18,0-.208.083-.062.186L4.7,18.974a.454.454,0,0,1,.163.486L3.106,24.706c-.056.166.017.217.163.115L7.88,21.578a.49.49,0,0,1,.527,0l4.611,3.243c.146.1.219.051.163-.115L11.42,19.46a.454.454,0,0,1,.163-.486l4.611-3.242c.146-.1.118-.186-.062-.186h-5.7Z" transform="translate(0 -9.874)" fill="#009688"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviews-item__right">
+                                            <time datetime="2020-12-10">10.12.2020</time>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-item__text">
+                                        Дуже відповідальний персонал, чудові херургие відповідальний персонал, чудові херургиурги, травма Дуже відповідальний персонал, чудові херургиурги, травматологи, медсестри і санітарочки. Дійсно лікарі від Бога. Дякую за врятовану ручку Лікареві Чорному С.В.І ще велике -велике дякую лікареві, який був на зміні 23 .08 .20 (нажаль не знаю імені) Дякую за оперативність, за допомогу, за пораду. Після зміни не пішов додому ,щоб прооперувати мою доньку .Низький Вам уклін ,здоров'я Вам та Вашим родинам!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="reviews-item">
+                                <div class="reviews-item__content">
+                                    <div class="reviews-item__head">
+                                        <div class="reviews-item__head-left">
+                                            <div class="reviews-item__author">Ковальчук Ірина</div>
+                                            <div class="reviews-item__rating rating">
+                                                <div class="rating__item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.286" height="15" viewBox="0 0 16.286 15">
+                                                        <path  d="M10.432,15.546a.477.477,0,0,1-.427-.3L8.244,10c-.056-.166-.146-.166-.2,0L6.282,15.246a.477.477,0,0,1-.427.3H.156c-.18,0-.208.083-.062.186L4.7,18.974a.454.454,0,0,1,.163.486L3.106,24.706c-.056.166.017.217.163.115L7.88,21.578a.49.49,0,0,1,.527,0l4.611,3.243c.146.1.219.051.163-.115L11.42,19.46a.454.454,0,0,1,.163-.486l4.611-3.242c.146-.1.118-.186-.062-.186h-5.7Z" transform="translate(0 -9.874)" fill="#009688"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.286" height="15" viewBox="0 0 16.286 15">
+                                                        <path  d="M10.432,15.546a.477.477,0,0,1-.427-.3L8.244,10c-.056-.166-.146-.166-.2,0L6.282,15.246a.477.477,0,0,1-.427.3H.156c-.18,0-.208.083-.062.186L4.7,18.974a.454.454,0,0,1,.163.486L3.106,24.706c-.056.166.017.217.163.115L7.88,21.578a.49.49,0,0,1,.527,0l4.611,3.243c.146.1.219.051.163-.115L11.42,19.46a.454.454,0,0,1,.163-.486l4.611-3.242c.146-.1.118-.186-.062-.186h-5.7Z" transform="translate(0 -9.874)" fill="#009688"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.286" height="15" viewBox="0 0 16.286 15">
+                                                        <path  d="M10.432,15.546a.477.477,0,0,1-.427-.3L8.244,10c-.056-.166-.146-.166-.2,0L6.282,15.246a.477.477,0,0,1-.427.3H.156c-.18,0-.208.083-.062.186L4.7,18.974a.454.454,0,0,1,.163.486L3.106,24.706c-.056.166.017.217.163.115L7.88,21.578a.49.49,0,0,1,.527,0l4.611,3.243c.146.1.219.051.163-.115L11.42,19.46a.454.454,0,0,1,.163-.486l4.611-3.242c.146-.1.118-.186-.062-.186h-5.7Z" transform="translate(0 -9.874)" fill="#009688"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.286" height="15" viewBox="0 0 16.286 15">
+                                                        <path  d="M10.432,15.546a.477.477,0,0,1-.427-.3L8.244,10c-.056-.166-.146-.166-.2,0L6.282,15.246a.477.477,0,0,1-.427.3H.156c-.18,0-.208.083-.062.186L4.7,18.974a.454.454,0,0,1,.163.486L3.106,24.706c-.056.166.017.217.163.115L7.88,21.578a.49.49,0,0,1,.527,0l4.611,3.243c.146.1.219.051.163-.115L11.42,19.46a.454.454,0,0,1,.163-.486l4.611-3.242c.146-.1.118-.186-.062-.186h-5.7Z" transform="translate(0 -9.874)" fill="#009688"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.286" height="15" viewBox="0 0 16.286 15">
+                                                        <path  d="M10.432,15.546a.477.477,0,0,1-.427-.3L8.244,10c-.056-.166-.146-.166-.2,0L6.282,15.246a.477.477,0,0,1-.427.3H.156c-.18,0-.208.083-.062.186L4.7,18.974a.454.454,0,0,1,.163.486L3.106,24.706c-.056.166.017.217.163.115L7.88,21.578a.49.49,0,0,1,.527,0l4.611,3.243c.146.1.219.051.163-.115L11.42,19.46a.454.454,0,0,1,.163-.486l4.611-3.242c.146-.1.118-.186-.062-.186h-5.7Z" transform="translate(0 -9.874)" fill="#009688"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviews-item__right">
+                                            <time datetime="2020-12-10">10.12.2020</time>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-item__text">
+                                        Дуже відповідальний персонал, чудові херургие відповідальний персонал, чудові херургиурги, травма Дуже відповідальний персонал, чудові херургиурги, травматологи, медсестри і санітарочки. Дійсно лікарі від Бога. Дякую за врятовану ручку Лікареві Чорному С.В.І ще велике -велике дякую лікареві, який був на зміні 23 .08 .20 (нажаль не знаю імені) Дякую за оперативність, за допомогу, за пораду. Після зміни не пішов додому ,щоб прооперувати мою доньку .Низький Вам уклін ,здоров'я Вам та Вашим родинам!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <ul class="pagination">
+                        <li class="pagination__current"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="pagination__next"><a href="#"><img src="images/dist/arrow.svg" alt="Next"></a></li>
+                    </ul>
+                </div>  
+            </div>
+    </section>
+
+
+    <div class="overlay"></div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__col">
+					<h3 class="footer__title">Відділення</h3>
+					<ul class="footer__list">
+						<li><a href="#">Відділенння невідкладної медичної допомоги</a></li>
+						<li><a href="#">Відділення анестезіології та реанімації</a></li>
+						<li><a href="#">Гастроентерологічне відділення</a></li>
+						<li><a href="#">Інфекційне відділення</a></li>
+						<li><a href="#">Неврологічне відділення</a></li>
+						<li><a href="#">Пульмонологічне відділення</a></li>
+						<li><a href="#">Ревматологічне відділення</a></li>
+						<li><a href="#">Терапевтичне відділення</a></li>
+						<li><a href="#">Хірургічне відділення</a></li>
+						<li><a href="#">Поліклініка</a></li>
+					</ul>
+				</div>
+				<div class="footer__col">
+					<h3 class="footer__title">Пацієнту</h3>
+					<ul class="footer__list">
+						<li><a href="#">Платні послуги</a></li>
+						<li><a href="#">Відгуки і питання</a></li>
+						<li><a href="#">Історія лікарні</a></li>
+						<li><a href="#">Керівництво</a></li>
+						<li><a href="#">Використання коштів</a></li>
+						<li><a href="#">Новини</a></li>
+						<li><a href="#">Covid - 19</a></li>
+						<li><a href="#">Контакти</a></li>
+					</ul>
+				</div>
+				<div class="footer__col">
+					<a href="#" class="footer__logo">
+						<img src="images/dist/logo.svg" alt="Вінницька міська клінічна лікарня №1">
+					</a>
+					<div class="footer__contacts">
+						<a href="tel:0432560110" class="header__contact">
+							<div class="header__contact-top">
+								<img src="images/dist/phone.svg" alt="contacts">
+								<span>(0432) 56-01-10</span>
+							</div>
+							<div class="header__contact-bottom">Реєстратура поліклініки</div>
+						</a>
+						<a href="tel:0432560117" class="header__contact">
+							<div class="header__contact-top">
+								<img src="images/dist/phone.svg" alt="contacts">
+								<span>(0432) 56-01-17</span>
+							</div>
+							<div class="header__contact-bottom">Приймальна</div>
+						</a>
+					</div>
+					<a href="#" class="footer__geo">
+						<img src="images/dist/geo-2.svg" alt="geo">
+						<address>м. Вінниця, вул. Хмельницьке шосе, 96</address>
+					</a>
+					<ul class="footer__socials">
+						<li><a href="#"><img src="images/dist/facebook.svg" alt="facebook"></a></li>
+						<li><a href="#"><img src="images/dist/viber.svg" alt="viber"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="footer__info">
+					<div class="footer__copy">&copy; Вінницька медична лікарня №1</div>
+					<div class="footer__author">Створено веб-студією <span>ICEBERG</span></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/fslightbox.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+</html>

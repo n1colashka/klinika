@@ -1,7 +1,29 @@
 @media (min-width: 1025px) {
+    .pagination {
+        li:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        }
+    }
     .footer {
         &__list a:hover {
             color: $green;
+        }
+    }
+    .breadcrumbs li:hover {
+        text-decoration: underline;
+    }
+    .news__item:hover {
+        box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+    }
+    .partners__item:hover {
+        box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+    }
+    .feedback {
+        &__item:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        }
+        &__item--green:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
         }
     }
     .branches {
@@ -58,6 +80,9 @@
 }
 
 @media (max-width: 1024px) {
+    .news-page__title {
+        margin-bottom: 40px;
+    }
     .footer {
         &__col {
             width: 100%;
@@ -154,6 +179,7 @@
         }
     }
     .header {
+        margin-bottom: 75px;
         &__middle {
             box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
             position: fixed;
@@ -194,10 +220,16 @@
     .partners {
         &__item {
             flex-basis: calc(50% - 30px);
-            
         }
     }
     .news {
+        &__small-items {
+            margin: -7px;
+            .news__item {
+                flex-basis: calc(50% - 14px);
+                margin: 7px;
+            }
+        }
         &__list {
             flex-direction: column;
             margin: -7px;
@@ -248,6 +280,12 @@
 }
 
 @media (max-width: 768px) {
+    .pagination {
+        li:nth-child(4),
+        li:nth-child(5) {
+            display: none;
+        }
+    }
     .footer {
         padding-top: 30px;
         &__inner {
@@ -386,6 +424,11 @@
     .news {
         &__items {
             flex-direction: column;
+        }
+        &__small-items {
+            .news__item {
+                flex-basis: 100%;
+            }
         }
         &__item {
             flex-basis: 100%;

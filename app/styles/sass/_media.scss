@@ -80,6 +80,18 @@
 }
 
 @media (max-width: 1024px) {
+    .article {
+        padding-bottom: 70px;
+        &__content {
+            padding: 15px;
+        }
+        &__news-title {
+            margin-bottom: 25px;
+        }
+        &__inner {
+            margin-bottom: 40px;
+        }
+    }
     .news-page__title {
         margin-bottom: 40px;
     }

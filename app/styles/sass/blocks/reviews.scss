@@ -21,29 +21,6 @@
         align-items: center;
     }
     
-    &__next,
-    &__prev {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 85px;
-        height: 40px;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
-        border-radius: 5px;
-        margin: 0 15px;
-        cursor: pointer;
-
-        &.swiper-button-disabled {
-            opacity: .5;
-        }
-    }
-
-    &__prev {
-        img {
-            transform: rotate(180deg);
-        }
-    }
-
 }
 
 .reviews-item {

@@ -94,6 +94,12 @@
 }
 
 @media (max-width: 1024px) {
+    .contacts {
+        padding-bottom: 70px;
+        &__map {
+            margin-right: 50px;
+        }
+    }
     .history {
         padding-bottom: 70px;
     }
@@ -326,6 +332,31 @@
 }
 
 @media (max-width: 768px) {
+    .contacts {
+        &__map {
+            iframe {
+                height: 300px;
+            }
+        }
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 30px;
+        }
+        &__content {
+            flex-direction: column-reverse;
+        }
+        &__list {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        &__map {
+            margin-right: 0;
+        }
+    }
     .gallery {
         &__item {
             width: calc(33.333% - 30px);

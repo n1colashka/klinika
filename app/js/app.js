@@ -77,6 +77,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
+        if (document.querySelector('.article__slider')) {
+            var articleSlider = new Swiper('.article__slider', {
+                slidesPerView: 4,
+                navigation: {
+                    prevEl: '.article__prev',
+                    nextEl: '.article__next',
+                },
+                spaceBetween: 15,
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                        // spaceBetween: 30,
+                    },
+                    480: {
+                        spaceBetween: 15,
+                        slidesPerView: 2,
+                    },
+                    640: {
+                        slidesPerView: 3,
+                    },
+                    901: {
+                        slidesPerView: 4,
+                    }
+                }
+            });
+        }
     }
 
     function initModals() {

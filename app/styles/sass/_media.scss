@@ -229,6 +229,11 @@
 }
 
 @media (max-width: 900px) {
+    .article {
+        .news__item {
+            max-width: calc(33.333% - 40px);
+        }
+    }
     .partners {
         &__item {
             flex-basis: calc(50% - 30px);
@@ -421,7 +426,13 @@
     }
 }
 
+@media (max-width: 640px) {
+    .article .news__item {
+        max-width: calc(50% - 34px);
+    }
+}
 @media (max-width: 600px) {
+    
     .hero {
         &__content {
             margin-bottom: 100px;
@@ -433,6 +444,10 @@
 }
 
 @media (max-width: 480px) {
+    .article .news__item {
+        max-width: calc(100% - 20px);
+        margin: 0;
+    }
     .news {
         &__items {
             flex-direction: column;

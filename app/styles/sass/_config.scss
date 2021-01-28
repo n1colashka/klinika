@@ -285,6 +285,11 @@ a {
 }
 
 .slider {
+	&__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 	&__next,
     &__prev {
         display: flex;

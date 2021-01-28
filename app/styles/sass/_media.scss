@@ -4,6 +4,9 @@
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
         }
     }
+    .services__item:hover {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    }
     .footer {
         &__list a:hover {
             color: $green;
@@ -80,6 +83,9 @@
 }
 
 @media (max-width: 1024px) {
+    .services {
+        padding-bottom: 70px;
+    }
     .article {
         padding-bottom: 70px;
         &__content {
@@ -297,6 +303,26 @@
 }
 
 @media (max-width: 768px) {
+    .services__title {
+        margin-bottom: 35px;
+    }
+    .services__subtitle {
+        margin-right: 20px;
+    }
+    .services__item {
+        padding: 0 15px;
+        font-size: 14px;
+        a {
+            margin: 0 -15px;
+            padding: 15px;
+            padding-right: 40px;
+
+            &::before,
+            &::after {
+                right: 15px;
+            }
+        }
+    }
     .pagination {
         li:nth-child(4),
         li:nth-child(5) {

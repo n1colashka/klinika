@@ -1,10 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const headerNavigationList =  document.querySelectorAll('.header__navigation-list');
     const headerBottom =  document.querySelector('.header__bottom');
+    const header =  document.querySelector('.header');
     const menuBtn =  document.querySelector('.header__menu-btn');
     const menu =  document.querySelector('.menu');
     const overlay =  document.querySelector('.overlay');
     const html =  document.querySelector('html');
     const menuList = document.querySelectorAll('.menu__list');
+    const accordions = document.querySelectorAll('.accordion');
 
     function initMenu() {
         menuBtn.addEventListener('click', openMenu);
@@ -16,6 +19,23 @@ document.addEventListener('DOMContentLoaded', () => {
         })
 
         toggleMenuList();
+        initMenuHover();
+
+        
+        function initMenuHover() {
+            if (window.innerWidth > 1024) {
+                headerNavigationList.forEach(list => {
+                    list.addEventListener('mouseover', function() {
+                        header.classList.add('hovered');
+                        overlay.classList.add('active');
+                    })
+                    list.addEventListener('mouseout', function() {
+                        header.classList.remove('hovered');
+                        overlay.classList.remove('active');
+                    })
+                })
+            }
+        }
 
         function openMenu() {
             menu.classList.add('open');
@@ -134,9 +154,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
     }
+
+    function initServicesAccordions() {
+        if (accordions.length > 0) {
+            accordions.forEach(accordion => {
+                accordion.addEventListener('click', function(e) {
+                    const items = document.querySelectorAll('.accordion__item');
+                    e.preventDefault();
+                    if (e.target.closest('.accordion__item')) {
+                        items.forEach(item => {
+                            item.classList.remove('open');
+                        })
+                        e.target.closest('.accordion__item').classList.add('open');
+                    }
+                })
+            })
+        }
+    }
     
     initMenu();
     initFixedHeader();
     initSliders();
+    initServicesAccordions();
     // initModals();
 })

@@ -1,5 +1,11 @@
 .header {
     background-color: #ffffff;
+
+    &.hovered {
+        position: relative;
+        z-index: 30;
+    }
+    
     &__top {
         border-bottom: 1px solid #DFDFDF;
     }

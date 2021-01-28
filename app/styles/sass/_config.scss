@@ -313,3 +313,39 @@ a {
         }
     }
 }
+
+.accordion {
+	&__item {
+		a {
+			&::before,
+            &::after {
+                position: absolute;
+                content: "";
+                right: 30px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: $green;
+                height: 2px;
+                width: 20px;
+                transition: .2s ease;
+            }
+
+            &::after {
+                transform: rotate(90deg);
+            }
+		}
+		ul {
+			display: none;
+		}
+		&.open {
+            a {
+                &::after {
+                    transform: rotate(0);
+                }
+            }
+            ul {
+                display: block;
+            }
+        }
+	}
+}

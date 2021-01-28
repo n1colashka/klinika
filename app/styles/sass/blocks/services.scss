@@ -1,0 +1,52 @@
+.services {
+    padding-bottom: 150px;
+
+    &__inner {
+    }
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+        padding: 0 30px;
+        transition: .2s ease;
+
+        a {
+            position: relative;
+            display: block;
+            font-family: 'Roboto-Medium', sans-serif;
+            font-weight: 500;
+            border-bottom: 1px solid #ecebeb;
+            margin: 0 -30px;
+            padding: 15px 30px;
+            padding-right: 55px;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        ul {
+            margin-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        
+    }
+
+    &__price {
+        font-family: 'Roboto-Medium', sans-serif;
+        font-weight: 500;
+        text-align: right;
+    }
+}

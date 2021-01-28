@@ -185,6 +185,7 @@ a {
 }
 
 .section {
+	
 	&__head {
 		display: flex;
         justify-content: space-between;
@@ -350,6 +351,9 @@ a {
 	}
 }
 
-.gallery {
-
+body {
+	.section__box {
+		margin-top: 0;
+        margin-bottom: 60px;
+	}
 }

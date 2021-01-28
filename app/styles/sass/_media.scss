@@ -1,4 +1,7 @@
 @media (min-width: 1025px) {
+    .clinic__btn:hover {
+        background-color: #E5F4F3;
+    }
     .gallery__item a:hover {
         &::before {
             opacity: 0.5;
@@ -94,6 +97,9 @@
 }
 
 @media (max-width: 1024px) {
+    .clinic {
+        padding-bottom: 70px;
+    }
     body .section {
         &__box {
             margin-bottom: 40px;
@@ -362,6 +368,36 @@
 }
 
 @media (max-width: 768px) {
+    .clinic {
+        &__info {
+            flex-direction: column;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 5px;
+            background-color: #fff;
+            margin-top: 60px;
+        }
+        &__contacts {
+            max-width: 100%;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 15px;
+            padding-top: 30px;
+        }
+        &__desc {
+            max-width: 100%;
+            margin-left: 0;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 15px;
+        }
+        .hero__bottom-item {
+            max-width: 100%;
+        }
+        &__accordion-title {
+            line-height: 24px;
+            font-size: 14px;
+        }
+    }
     .department {
         &__subtitle {
             margin-bottom: 20px;
@@ -374,8 +410,11 @@
         line-height: 28px;
     }
     .department-team {
-        &__img img {
+        &__img {
             height: 250px;
+            img {
+                height: 250px;
+            }
         }
     }
     .contacts {

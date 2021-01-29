@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         menuBtn.addEventListener('click', openMenu);
     
         document.body.addEventListener('click', function(e) {
-            if (!e.target.closest('.header')) {
+            if (!e.target.closest('.header') && !(e.target.closest('.modal'))) {
                 closeMenu();
             }
         })
@@ -108,7 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 breakpoints: {
                     0: {
                         slidesPerView: 1,
-                        // spaceBetween: 30,
                     },
                     480: {
                         spaceBetween: 15,
@@ -127,13 +126,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function initModals() {
         MicroModal.init({
-            onShow: modal => document.querySelector('html').classList.add('overflow-hidden'), // [1]
-            onClose: modal => document.querySelector('html').classList.remove('overflow-hidden'), // [2]
-            openClass: 'is-open', // [5]
-            disableScroll: true, // [6]
-            disableFocus: false, // [7]
-            awaitOpenAnimation: true, // [8]
-            awaitCloseAnimation: true, // [9]
+            onShow: modal => html.classList.add('overflow-hidden'), 
+            onClose: modal => html.classList.remove('overflow-hidden'), 
+            openClass: 'is-open', 
+            disableScroll: true, 
+            disableFocus: false, 
+            awaitOpenAnimation: true, 
+            awaitCloseAnimation: true, 
         });
         
     }
@@ -221,6 +220,11 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         }
     }
+    
+    function initMaskedInput() {
+        VMasker(document.querySelector(".modal__phone")).maskPattern("(999)-999-99-99");
+        VMasker(document.querySelector(".modal__direction")).maskPattern("9999-9999-9999");
+    }
 
     initMenu();
     initFixedHeader();
@@ -228,5 +232,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initRatings();
     initServicesAccordions();
     initReviewsTabs();
-    // initModals();
+    initMaskedInput();
+    initModals();
 })

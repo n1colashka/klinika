@@ -11,38 +11,43 @@
     }
 
     &__list {
-        position: relative;
-        padding-left: 70px;
         margin-bottom: 60px;
-        &::before {
-            position: absolute;
-            content: "";
-            left: 20px;
-            top: 0;
-            height: calc(100% - 30px);
-            width: 1px;
-            background-color: $green;
-        }
     }
 
     &__item {
         position: relative;
-        margin-bottom: 60px;
+        padding-bottom: 60px;
+        padding-left: 70px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            left: 20px;
+            top: 11px;
+            height: 100%;
+            width: 1px;
+            background-color: $green;
+            z-index: 2;
+        }
 
         &::before {
             position: absolute;
             content: "";
-            left: -69px;
+            left: 0;
             top: -5px;
             width: 40px;
             height: 40px;
             background-color: $green;
-            border: 15px solid #E5F4F3;
+            border: 14px solid #E5F4F3;
             border-radius: 50%;
         }
         
         &:last-child {
-            margin-bottom: 0;
+            padding-bottom: 0;
+
+            &::after {
+                content: none;
+            }
         }
     }
 

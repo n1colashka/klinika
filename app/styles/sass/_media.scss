@@ -390,6 +390,11 @@
 }
 
 @media (max-width: 768px) {
+    .modal {
+        &__container {
+            padding-right: 0;
+        }
+    }
     .clinic {
         &__info {
             flex-direction: column;
@@ -658,10 +663,15 @@
 }
 
 @media (max-width: 640px) {
-    .modal {
-        &__container {
-            padding-right: 0;
+    .cabinets {
+        &__content {
+            padding-right: 30px;
         }
+        &__info {
+            padding-left: 30px;
+        }
+    }
+    .modal {
         &__close {
             right: 0;
         }
@@ -739,6 +749,26 @@
 }
 
 @media (max-width: 480px) {
+    .cabinets {
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        &__content {
+            height: 200px;
+            margin-bottom: 30px;
+        }
+        &__foot {
+            text-align: center;
+            margin: -10px;
+            .modal__btn {
+                margin: 10px;
+            }
+        }
+        &__info {
+            padding-left: 0;
+            max-width: 100%;
+        }
+    }
     .department-team {
         &__list {
             margin-left: 0;

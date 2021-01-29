@@ -199,10 +199,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function initReviewsTabs() {
         const tabsTitle = document.querySelectorAll('[data-tab-title]');
         const tabsContent = document.querySelectorAll('[data-tab]');
-
         if (tabsTitle.length > 0) {
             tabsTitle.forEach(title => {
                 title.addEventListener('click', function() {
+                    console.log(title);
                     tabsTitle.forEach(item => {
                         item.classList.remove('active');
                     })
@@ -220,6 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         }
     }
+
     
     function initMaskedInput() {
         VMasker(document.querySelector(".modal__phone")).maskPattern("(999)-999-99-99");

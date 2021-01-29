@@ -9,6 +9,8 @@
 	<link rel="icon" href="images/favicon.png">
 	<meta property="og:image" content="images/dist/preview.jpg">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/main.min.css">
 	
@@ -71,7 +73,7 @@
 								<span>Ми в фейсбуці</span>
 							</div>
 						</a>
-						<a href="#" class="header__btn header__btn--green">
+						<a href="#" class="header__btn header__btn--green" data-micromodal-trigger="modal-1">
 							<div class="header__btn-content">
 								<img src="images/dist/check.svg" alt="online">
 								<span>Онлайн запис</span>
@@ -413,7 +415,303 @@
 		</div>
 	</footer>
 
+	<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+				<button class="modal__close" aria-label="Close modal" data-micromodal-close>
+					<img src="images/dist/close.svg" alt="" data-micromodal-close>
+				</button>
+				<div class="modal__body">
+					<div class="modal__title title">Форма реєстрації</div>
+					<form action="#">
+						<div class="modal__row modal__fields">
+							<div class="modal__col">
+								<div class="modal__form-item">
+									<label>
+										<span>Ім'я</span>
+										<input type="text" placeholder="...">
+									</label>
+								</div>
+								<div class="modal__form-item">
+									<label>
+										<span>Прізвище</span>
+										<input type="text" placeholder="...">
+									</label>
+								</div>
+								<div class="modal__form-item">
+									<label>
+										<span>По батькові</span>
+										<input type="text" placeholder="...">
+									</label>
+								</div>
+							</div>
+							<div class="modal__col">
+								<div class="modal__form-item">
+									<label>
+										<span>Телефон</span>
+										<input type="text" class="modal__phone" placeholder="(093)-111-11-11">
+									</label>
+								</div>
+								<div class="modal__form-item modal__form-radio">
+									<span>Наявність направлення</span>
+									<div class="modal__form-radiobuttons">
+										<label>
+											<input type="radio" name="direction" checked>
+											<div class="modal__radio"></div>
+											<span>Так</span>
+										</label>
+										<label>
+											<input type="radio" name="direction">
+											<div class="modal__radio"></div>
+											<span>Ні</span>
+										</label>
+									</div>
+								</div>
+								<div class="modal__form-item">
+									<label>
+										<span>Номер направлення</span>
+										<input type="text" class="modal__direction" placeholder="1111-1111-1111-1111">
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="modal__row modal__foot">
+							<div class="modal__check modal__col">
+								<label>
+									<input type="checkbox" name="policy">
+									<span class="modal__checkbox"></span>
+									<span>Згоден(а) на обробку персональних даних</span>
+								</label>
+							</div>
+							<div class="modal__col modal__btn-wrapper">
+								<button class="modal__btn modal__btn--green">
+									<span class="modal__btn-content">
+										Продовжити
+									</span>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+				<button class="modal__close" aria-label="Close modal" data-micromodal-close>
+					<img src="images/dist/close.svg" alt="" data-micromodal-close>
+				</button>
+				<div class="modal__body">
+					<div class="modal__title title">Оберіть кабінет</div>
+					<form action="#">
+						<div class="modal__cabinets cabinets">
+							<div class="cabinets__content modal__form-radio">
+								<ul class="cabinets__list">
+									<li class="cabinets__item" data-tab-title="cab1">
+										<label>
+											<input type="radio" name="cabinet">
+											<div class="modal__radio"></div>
+											<span>Назва кабінету</span>
+										</label>
+									</li>
+									<li class="cabinets__item active" data-tab-title="cab2">
+										<label>
+											<input type="radio" name="cabinet" checked>
+											<div class="modal__radio"></div>
+											<span>Назва кабінету</span>
+										</label>
+									</li>
+									<li class="cabinets__item" data-tab-title="cab3">
+										<label>
+											<input type="radio" name="cabinet" >
+											<div class="modal__radio"></div>
+											<span>Назва кабінету</span>
+										</label>
+									</li>
+									<li class="cabinets__item" data-tab-title="cab4">
+										<label>
+											<input type="radio" name="cabinet" >
+											<div class="modal__radio"></div>
+											<span>Назва кабінету</span>
+										</label>
+									</li>
+									<li class="cabinets__item" data-tab-title="cab5">
+										<label>
+											<input type="radio" name="cabinet" >
+											<div class="modal__radio"></div>
+											<span>Назва кабінету</span>
+										</label>
+									</li>
+									<li class="cabinets__item" data-tab-title="cab6">
+										<label>
+											<input type="radio" name="cabinet" >
+											<div class="modal__radio"></div>
+											<span>Назва кабінету</span>
+										</label>
+									</li>
+									<li class="cabinets__item" data-tab-title="cab7">
+										<label>
+											<input type="radio" name="cabinet" >
+											<div class="modal__radio"></div>
+											<span>Назва кабінету</span>
+										</label>
+									</li>
+									<li class="cabinets__item" data-tab-title="cab8">
+										<label>
+											<input type="radio" name="cabinet" >
+											<div class="modal__radio"></div>
+											<span>Назва кабінету</span>
+										</label>
+									</li>
+									<li class="cabinets__item" data-tab-title="cab9">
+										<label>
+											<input type="radio" name="cabinet" >
+											<div class="modal__radio"></div>
+											<span>Назва кабінету</span>
+										</label>
+									</li>
+									<li class="cabinets__item" data-tab-title="cab10">
+										<label>
+											<input type="radio" name="cabinet" >
+											<div class="modal__radio"></div>
+											<span>Назва кабінету</span>
+										</label>
+									</li>
+									<li class="cabinets__item" data-tab-title="cab11">
+										<label>
+											<input type="radio" name="cabinet" >
+											<div class="modal__radio"></div>
+											<span>Назва кабінету</span>
+										</label>
+									</li>
+									<li class="cabinets__item" data-tab-title="cab12">
+										<label>
+											<input type="radio" name="cabinet" >
+											<div class="modal__radio"></div>
+											<span>Назва кабінету</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+							<ul class="cabinets__info">
+								<li class="cabinets__info-item" data-tab="cab1">
+									<p>Ковальчук  Ірина Ігорівна</p>
+									<p>(093) 917-98-71</p>
+									<p>08.06.1997</p>
+									<p>1321-1321-1321-1321</p>
+								</li>
+								<li class="cabinets__info-item active" data-tab="cab2">
+									<p>Lorem ipsum dolor sit.</p>
+									<p>(093) 917-98-71</p>
+									<p>08.06.1997</p>
+									<p>08.06.1997</p>
+									<p>1321-1321-1321-1321</p>
+								</li>
+								<li class="cabinets__info-item" data-tab="cab3">
+									<p>Ковальчук  Ірина Ігорівна</p>
+									<p>Ковальчук  Ірина Ігорівна</p>
+									<p>(093) 917-98-71</p>
+									<p>(093) 917-98-71</p>
+									<p>08.06.1997</p>
+									<p>1321-1321-1321-1321</p>
+								</li>
+								<li class="cabinets__info-item" data-tab="cab4">
+									<p>Ковальчук  Ірина Ігорівна</p>
+									<p>(093) 917-98-71</p>
+									<p>08.06.1997</p>
+									<p>1321-1321-1321-1321</p>
+								</li>
+								<li class="cabinets__info-item" data-tab="cab5">
+									<p>Ковальчук  Ірина Ігорівна</p>
+									<p>(093) 917-98-71</p>
+									<p>08.06.1997</p>
+									<p>1321-1321-1321-1321</p>
+								</li>
+								<li class="cabinets__info-item" data-tab="cab6">
+									<p>Ковальчук  Ірина Ігорівна</p>
+									<p>(093) 917-98-71</p>
+									<p>08.06.1997</p>
+									<p>1321-1321-1321-1321</p>
+								</li>
+								<li class="cabinets__info-item" data-tab="cab7">
+									<p>Ковальчук  Ірина Ігорівна</p>
+									<p>(093) 917-98-71</p>
+									<p>08.06.1997</p>
+									<p>1321-1321-1321-1321</p>
+								</li>
+								<li class="cabinets__info-item" data-tab="cab8">
+									<p>Ковальчук  Ірина Ігорівна</p>
+									<p>(093) 917-98-71</p>
+									<p>08.06.1997</p>
+									<p>1321-1321-1321-1321</p>
+								</li>
+								<li class="cabinets__info-item" data-tab="cab9">
+									<p>Ковальчук  Ірина Ігорівна</p>
+									<p>(093) 917-98-71</p>
+									<p>08.06.1997</p>
+									<p>1321-1321-1321-1321</p>
+								</li>
+								<li class="cabinets__info-item" data-tab="cab10">
+									<p>Ковальчук  Ірина Ігорівна</p>
+									<p>(093) 917-98-71</p>
+									<p>08.06.1997</p>
+									<p>1321-1321-1321-1321</p>
+								</li>
+								<li class="cabinets__info-item" data-tab="cab11">
+									<p>Ковальчук  Ірина Ігорівна</p>
+									<p>(093) 917-98-71</p>
+									<p>08.06.1997</p>
+									<p>1321-1321-1321-1321</p>
+								</li>
+								<li class="cabinets__info-item" data-tab="cab12">
+									<p>Ковальчук  Ірина Ігорівна</p>
+									<p>(093) 917-98-71</p>
+									<p>08.06.1997</p>
+									<p>1321-1321-1321-1321</p>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="cabinets__foot">
+							<button class="modal__btn modal__btn--blue">
+								<span class="modal__btn-content">
+									Назад
+								</span>
+							</button>
+							<button class="modal__btn modal__btn--green">
+								<span class="modal__btn-content">
+									Записатись
+								</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="modal-3" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+				<button class="modal__close" aria-label="Close modal" data-micromodal-close>
+					<img src="images/dist/close.svg" alt="" data-micromodal-close>
+				</button>
+				<div class="modal__body">
+					<div class="modal__img">
+						<img src="images/dist/modal-check.svg" alt="success">
+					</div>
+					<div class="modal__title title">Дякуємо за запис!</div>
+					<div class="modal__subtitle">Найближчим часом з Вами зв'яжеться наш адміністратор та підтвердить онлайн запис</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://unpkg.com/vanilla-masker@1.1.1/build/vanilla-masker.min.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 	<script src="js/fslightbox.js"></script>
 	<script src="js/app.min.js"></script>
 </body>

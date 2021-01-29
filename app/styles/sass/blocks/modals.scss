@@ -137,7 +137,30 @@
   will-change: transform;
 }
 
+#modal-3 {
+    .modal__container {
+        max-width: 800px;
+    }
+    text-align: center;
+    .modal__title {
+        margin-bottom: 30px;
+    }
+}
+
 .modal {
+    &__img {
+        margin-bottom: 30px;
+        text-align: center;
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+    }
 
     &__title {
         margin-bottom: 60px;

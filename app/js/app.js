@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!e.target.closest('.header') && !(e.target.closest('.modal'))) {
                 closeMenu();
             }
+            if (e.target.closest('[data-micromodal-trigger]')) html.classList.add('overflow-hidden');
         })
 
         toggleMenuList();
         initMenuHover();
-
         
         function initMenuHover() {
             if (window.innerWidth > 1024) {

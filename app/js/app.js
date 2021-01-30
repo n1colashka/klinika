@@ -159,13 +159,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (accordions.length > 0) {
             accordions.forEach(accordion => {
                 accordion.addEventListener('click', function(e) {
-                    const items = document.querySelectorAll('.accordion__item');
                     e.preventDefault();
+                    
                     if (e.target.closest('.accordion__item')) {
-                        items.forEach(item => {
-                            item.classList.remove('open');
-                        })
-                        e.target.closest('.accordion__item').classList.add('open');
+                        e.target.closest('.accordion__item').classList.toggle('open');
                     }
                 })
             })

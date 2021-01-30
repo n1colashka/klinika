@@ -110,6 +110,7 @@
         bottom: 100px;
         // bottom: 260px;
 
+        
         &::before,
         &::after {
             position: absolute;
@@ -119,6 +120,8 @@
             transform: translate(-50%, -50%);
             border-radius: 50%;
             border: 1px solid #009688;
+            animation: pulse 3s ease infinite forwards;
+            transition: .5s ease;
         }
 
         &::before {

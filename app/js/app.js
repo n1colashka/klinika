@@ -68,6 +68,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     el: '.hero__pagination',
                     clickable: true,
                 },
+                effect: 'fade',
+                autoplay: {
+                    delay: 10000,
+                    disableOnInteraction: false,
+                },
                 direction: 'vertical',
                 breakpoints: {
                     320: {

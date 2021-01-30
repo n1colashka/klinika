@@ -98,7 +98,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        position: absolute;
+        position: fixed;
         color: #ffffff;
         width: 80px;
         height: 80px;
@@ -107,7 +107,8 @@
         text-align: center;
         right: 170px;
         z-index: 6;
-        bottom: 260px;
+        bottom: 100px;
+        // bottom: 260px;
 
         &::before,
         &::after {

@@ -188,14 +188,16 @@ a {
 
 .breadcrumbs {
 	padding: 30px 0;
-	margin-left: -10px;
-	margin-right: -10px;
 	line-height: 24px;
 
 	li {
 		display: inline;
 		margin-left: 10px;
 		margin-right: 10px;
+
+		&:first-child {
+			margin-left: 0;
+		}
 
 		& + li {
 			position: relative;

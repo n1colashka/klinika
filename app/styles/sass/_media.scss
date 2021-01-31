@@ -255,7 +255,9 @@
             height: 600px;
         }
         &__widget {
-            display: none;
+            right: 20px;
+            bottom: 20px;
+            z-index: 11;
         }
         &__content {
             max-width: 100%;

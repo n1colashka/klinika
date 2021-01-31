@@ -229,6 +229,20 @@ document.addEventListener('DOMContentLoaded', () => {
         VMasker(document.querySelector(".modal__direction")).maskPattern("9999-9999-9999");
     }
 
+    function initDirection() {
+        const directionRadioButtons = document.querySelector('.modal__form-radiobuttons');
+        const directionRadioBtn = document.querySelector('.modal__form--no--direction');
+        const directionContent = document.querySelector('.modal__form-item--direction');
+
+        if (directionRadioButtons) {
+            directionRadioButtons.addEventListener('click', function(e) {
+                if (directionRadioBtn.querySelector('input:checked')) {
+                    directionContent.classList.toggle('hide');
+                }
+            })
+        }
+    }
+
     initMenu();
     initFixedHeader();
     initSliders();
@@ -237,4 +251,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initReviewsTabs();
     initMaskedInput();
     initModals();
+    initDirection();
 })

@@ -21,7 +21,7 @@
 }
 
 .modal__container {
-    max-width: 95%;
+    max-width: 1450px;
     width: calc(100% - 20px);
     margin-left: 10px;
     margin-right: 10px;
@@ -30,6 +30,7 @@
     box-sizing: border-box;
     padding-bottom: 10px;
     padding-right: 50px;
+    padding-left: 50px;
     border-radius: 5px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
     overflow-y: auto;
@@ -183,9 +184,13 @@
         margin-left: 10px;
         margin-right: 10px;
     }
-
+    
     &__form-item {
         margin-bottom: 30px;
+
+        &.hide {
+            display: none;
+        }
 
         span {
             display: inline-block;

@@ -114,6 +114,10 @@ input::-webkit-inner-spin-button {
 	-webkit-appearance: none
 }
 
+* {
+	outline: transparent;
+}
+
 textarea {
 	resize: none;
 }

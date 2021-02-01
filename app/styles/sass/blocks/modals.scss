@@ -21,6 +21,7 @@
 }
 
 .modal__container {
+    position: relative;
     max-width: 1450px;
     width: calc(100% - 20px);
     margin-left: 10px;
@@ -61,6 +62,7 @@
     border: 0;
     z-index: 6;
     cursor: pointer;
+    outline: transparent;
 }
 
 .modal__content {
